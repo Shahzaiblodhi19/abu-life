@@ -13,11 +13,11 @@
 <body>
     <div class="banner">
         <div class="container">
-            <h1 style="font-size: 36px;font-weight: 400;color: #fff;margin-top: 0; margin-bottom: 0px;">For more than
+            <h1 class="main-head" style="font-size: 36px;font-weight: 400;color: #fff;margin-top: 0; margin-bottom: 0px;">For more than
                 <span style="font-weight: 500;"> 25
                     years now, </span>
             </h1>
-            <p style="color: #fff;font-size: 14px;width: 632px;font-weight: 400;line-height: 24px;">Operating in
+            <p class="paraa" style="color: #fff;font-size: 14px;max-width: 632px;font-weight: 400;line-height: 24px;width: 100%;">Operating in
                 Azerbaijan, Irshad sells various brands of mobile phones, home appliances, and electronics
                 at wholesale, corporate, and retail levels.
             </p>
@@ -25,7 +25,7 @@
                 style="width: 140px;height: 40px;border-radius: 50px;border: 0;color: #0A9749;font-size: 12px;font-weight: 500;margin-top: 20px;">FAQ</button>
         </div>
     </div>
-    <div class="container">
+    <div class="container" style="margin-bottom: 50px;">
         <h2 style="color: #002D69;font-weight: 700;font-size: 18px;margin-bottom: 0;margin-top: 0;">CONFIRM
             ORDER
         </h2>
@@ -57,20 +57,36 @@
                     <textarea rows="9" placeholder="Notes About Your Order, E.g. Special Notes For Delivery"></textarea>
                 </form>
                 <div class="section" style="margin-top: 30px;">
-                    <h3 style="color: #949494;font-size: 14px;font-weight: 500;margin-bottom: 30px;">CHOOSE A METHOD OF OBTAINING THE PRODUCT</h3>
+                    <h3 style="color: #949494;font-size: 14px;font-weight: 500;margin-bottom: 30px;">CHOOSE A METHOD OF
+                        OBTAINING THE PRODUCT</h3>
                     <div class="option-group" id="delivery-options">
                         <div class="option" onclick="selectOption('pickup')">
-                            <label><span>🛍️ I will pick it up from the store.</span></label>
+                            <label><span style="display: flex; align-items: center; gap: 10px;"><svg width="18"
+                                        height="18" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M15.7201 10.8125V5.75C15.7201 4.63112 15.2756 3.55806 14.4845 2.76689C13.6933 1.97572 12.6202 1.53125 11.5014 1.53125C10.3825 1.53125 9.30942 1.97572 8.51825 2.76689C7.72708 3.55806 7.28261 4.63112 7.28261 5.75V10.8125M20.0581 8.57037L21.479 22.0704C21.5577 22.8185 20.9727 23.4688 20.2201 23.4688H2.78261C2.60509 23.4689 2.42952 23.4318 2.2673 23.3597C2.10508 23.2876 1.95984 23.1822 1.84101 23.0503C1.72218 22.9184 1.63242 22.763 1.57757 22.5942C1.52271 22.4254 1.50399 22.2469 1.52261 22.0704L2.94461 8.57037C2.97741 8.25938 3.12418 7.97154 3.35664 7.76235C3.58909 7.55316 3.89076 7.43744 4.20348 7.4375H18.7992C19.4472 7.4375 19.9906 7.92687 20.0581 8.57037ZM7.70448 10.8125C7.70448 10.9244 7.66003 11.0317 7.58092 11.1108C7.5018 11.1899 7.39449 11.2344 7.28261 11.2344C7.17072 11.2344 7.06341 11.1899 6.9843 11.1108C6.90518 11.0317 6.86073 10.9244 6.86073 10.8125C6.86073 10.7006 6.90518 10.5933 6.9843 10.5142C7.06341 10.4351 7.17072 10.3906 7.28261 10.3906C7.39449 10.3906 7.5018 10.4351 7.58092 10.5142C7.66003 10.5933 7.70448 10.7006 7.70448 10.8125ZM16.142 10.8125C16.142 10.9244 16.0975 11.0317 16.0184 11.1108C15.9393 11.1899 15.832 11.2344 15.7201 11.2344C15.6082 11.2344 15.5009 11.1899 15.4218 11.1108C15.3427 11.0317 15.2982 10.9244 15.2982 10.8125C15.2982 10.7006 15.3427 10.5933 15.4218 10.5142C15.5009 10.4351 15.6082 10.3906 15.7201 10.3906C15.832 10.3906 15.9393 10.4351 16.0184 10.5142C16.0975 10.5933 16.142 10.7006 16.142 10.8125Z"
+                                            stroke="#949494" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                    I will pick it up from the store.</span></label>
                             <input type="radio" name="delivery" id="pickupRadio">
                         </div>
                         <div class="option" onclick="selectOption('deliver')">
-                            <label><span>📦 Deliver to address</span></label>
+                            <label><span style="display: flex; align-items: center; gap: 10px;"><svg width="20"
+                                        height="20" viewBox="0 0 20 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.86782 0L10.2291 0.0626541C13.234 1.93898 16.498 3.52908 19.4878 5.41266C19.644 5.51093 19.9202 5.63162 19.9756 5.81364L20 17.0004C19.9604 17.4284 19.2603 17.7034 18.8957 17.9197C16.0293 19.6233 13.0903 21.2101 10.2291 22.9242C10.0959 23.0066 9.93968 23.0297 9.79596 22.9571L0.193163 17.4086L0 17.2075V5.77935L0.134489 5.61777L9.86782 0ZM7.66127 2.26082L16.3945 7.27711L18.7632 5.93961L10.0419 0.887051L9.7808 0.951024L7.69226 2.1586L7.66127 2.26082ZM15.6555 7.79022L6.87214 2.675L6.77588 2.68028L5.19432 3.61877L13.973 8.70629L15.6548 7.78956L15.6555 7.79022ZM13.1879 9.22137L4.41705 4.09428L1.19722 5.93961L9.91858 10.9915L10.1473 10.9453L13.1872 9.22203L13.1879 9.22137ZM9.58565 11.6906L0.752217 6.65519V16.7999L9.58565 21.9092V11.6899V11.6906ZM19.2082 6.65519L16.8474 8.02105L16.8415 12.5077C16.8553 12.7168 16.7129 12.854 16.5593 12.9661C15.8743 13.4667 14.8881 13.8373 14.1761 14.3333C13.9275 14.454 13.5821 14.2522 13.5821 13.9864V9.8644L10.3748 11.6913V21.9105L19.2082 16.8012V6.65519ZM16.0504 8.48139L14.3725 9.44429V13.2701L16.0504 12.3072V8.48139Z"
+                                            fill="#949494" />
+                                    </svg>
+                                    Deliver to address</span></label>
                             <input type="radio" name="delivery" id="deliverRadio">
                         </div>
                     </div>
 
                     <div class="conditional-section" id="pickupSelect" style="display: none;">
-                        <select style="width: 100%;">
+                        <p style="color: #949494;font-size: 12px;font-weight: 400;">The store you will receive the
+                            delivery from</p>
+                        <select style="width: 100%;margin-top: 10px;">
                             <option>Select a store location</option>
                             <option>Baku Central Store</option>
                             <option>Ganja Retail Center</option>
@@ -79,40 +95,109 @@
                     </div>
 
                     <div class="conditional-section" id="deliverAddress" style="display: none;">
-                        <input type="text" placeholder="Street Address">
-                        <input type="text" placeholder="City">
-                        <input type="text" placeholder="Postal Code">
+                        <p style="color: #949494;font-size: 12px;font-weight: 400;">Delivery address</p>
+                        <input class="address" type="text" placeholder="Record the address." style="margin-top: 10px;">
                     </div>
 
-                    <h3 style="color: #949494;font-size: 14px;font-weight: 500;margin-bottom: 30px;">SELECT PAYMENT METHOD</h3>
+                    <h3 style="color: #949494;font-size: 14px;font-weight: 500; margin-top: 40px;">SELECT PAYMENT
+                        METHOD</h3>
+                    <hr class="cart-divider" />
                     <div class="option-group">
-                        <div class="option">
-                            <label><span>💳 Buy in installments</span></label>
-                            <input type="radio" name="payment">
+                        <div class="option installment1">
+                            <label><span style="display: flex; align-items: center; gap: 10px;">
+                                    <svg width="20" height="20" viewBox="0 0 26 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1 5.75H25M1 6.7H25M4.69231 13.35H12.0769M4.69231 16.2H8.38462M3.76923 20H22.2308C22.9652 20 23.6696 19.6997 24.1889 19.1653C24.7082 18.6308 25 17.9059 25 17.15V3.85C25 3.09413 24.7082 2.36922 24.1889 1.83475C23.6696 1.30027 22.9652 1 22.2308 1H3.76923C3.03479 1 2.33042 1.30027 1.81109 1.83475C1.29176 2.36922 1 3.09413 1 3.85V17.15C1 17.9059 1.29176 18.6308 1.81109 19.1653C2.33042 19.6997 3.03479 20 3.76923 20Z"
+                                            stroke="#949494" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                    Buy in installments</span></label>
+                            <input type="radio" name="payment" id="installmentRadio1" value="installments">
                         </div>
-                        <div class="option">
-                            <label><span>💳 Buy in installments</span></label>
-                            <input type="radio" name="payment">
+                        <div class="option installment2">
+                            <label><span style="display: flex; align-items: center; gap: 10px;"><svg width="20"
+                                        height="20" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M3.5 0.75C2.70435 0.75 1.94129 1.06607 1.37868 1.62868C0.816071 2.19129 0.5 2.95435 0.5 3.75V4.5H21.5V3.75C21.5 2.95435 21.1839 2.19129 20.6213 1.62868C20.0587 1.06607 19.2956 0.75 18.5 0.75H3.5Z"
+                                            fill="#949494" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M21.5 6.75H0.5V14.25C0.5 15.0456 0.816071 15.8087 1.37868 16.3713C1.94129 16.9339 2.70435 17.25 3.5 17.25H18.5C19.2956 17.25 20.0587 16.9339 20.6213 16.3713C21.1839 15.8087 21.5 15.0456 21.5 14.25V6.75ZM3.5 10.5C3.5 10.3011 3.57902 10.1103 3.71967 9.96967C3.86032 9.82902 4.05109 9.75 4.25 9.75H10.25C10.4489 9.75 10.6397 9.82902 10.7803 9.96967C10.921 10.1103 11 10.3011 11 10.5C11 10.6989 10.921 10.8897 10.7803 11.0303C10.6397 11.171 10.4489 11.25 10.25 11.25H4.25C4.05109 11.25 3.86032 11.171 3.71967 11.0303C3.57902 10.8897 3.5 10.6989 3.5 10.5ZM4.25 12.75C4.05109 12.75 3.86032 12.829 3.71967 12.9697C3.57902 13.1103 3.5 13.3011 3.5 13.5C3.5 13.6989 3.57902 13.8897 3.71967 14.0303C3.86032 14.171 4.05109 14.25 4.25 14.25H7.25C7.44891 14.25 7.63968 14.171 7.78033 14.0303C7.92098 13.8897 8 13.6989 8 13.5C8 13.3011 7.92098 13.1103 7.78033 12.9697C7.63968 12.829 7.44891 12.75 7.25 12.75H4.25Z"
+                                            fill="#949494" />
+                                    </svg>
+
+                                    Buy in installments</span></label>
+                            <input type="radio" name="payment" id="installmentRadio2" value="installments">
                         </div>
-                        <div class="option">
-                            <label><span>💵 Pay cash on delivery</span></label>
-                            <input type="radio" name="payment">
+                        <div class="option cashOnDelivery">
+                            <label><span style="display: flex; align-items: center; gap: 10px;"><svg width="20"
+                                        height="20" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M19 9C19 8.40326 18.7629 7.83097 18.341 7.40901C17.919 6.98705 17.3467 6.75 16.75 6.75H13C13 7.54565 12.6839 8.30871 12.1213 8.87132C11.5587 9.43393 10.7956 9.75 10 9.75C9.20435 9.75 8.44129 9.43393 7.87868 8.87132C7.31607 8.30871 7 7.54565 7 6.75H3.25C2.65326 6.75 2.08097 6.98705 1.65901 7.40901C1.23705 7.83097 1 8.40326 1 9M19 9V15C19 15.5967 18.7629 16.169 18.341 16.591C17.919 17.0129 17.3467 17.25 16.75 17.25H3.25C2.65326 17.25 2.08097 17.0129 1.65901 16.591C1.23705 16.169 1 15.5967 1 15V9M19 9V6M1 9V6M19 6C19 5.40326 18.7629 4.83097 18.341 4.40901C17.919 3.98705 17.3467 3.75 16.75 3.75H3.25C2.65326 3.75 2.08097 3.98705 1.65901 4.40901C1.23705 4.83097 1 5.40326 1 6M19 6V3C19 2.40326 18.7629 1.83097 18.341 1.40901C17.919 0.987053 17.3467 0.75 16.75 0.75H3.25C2.65326 0.75 2.08097 0.987053 1.65901 1.40901C1.23705 1.83097 1 2.40326 1 3V6"
+                                            stroke="#949494" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                    Pay cash on delivery</span></label>
+                            <input type="radio" name="payment" id="cashOnDelivery" value="cod">
                         </div>
-                        <div class="option">
-                            <label><span>💰 Pay cash online</span></label>
-                            <input type="radio" name="payment">
+                        <div class="option cashOnline">
+                            <label><span style="display: flex; align-items: center; gap: 10px;"><svg width="20"
+                                        height="20" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1.25 15.75C6.58561 15.7457 11.898 16.4522 17.047 17.851C17.774 18.049 18.5 17.509 18.5 16.755V15.75M2.75 1.5V2.25C2.75 2.44891 2.67098 2.63968 2.53033 2.78033C2.38968 2.92098 2.19891 3 2 3H1.25M1.25 3V2.625C1.25 2.004 1.754 1.5 2.375 1.5H19.25M1.25 3V12M19.25 1.5V2.25C19.25 2.664 19.586 3 20 3H20.75M19.25 1.5H19.625C20.246 1.5 20.75 2.004 20.75 2.625V12.375C20.75 12.996 20.246 13.5 19.625 13.5H19.25M1.25 12V12.375C1.25 12.6734 1.36853 12.9595 1.5795 13.1705C1.79048 13.3815 2.07663 13.5 2.375 13.5H2.75M1.25 12H2C2.19891 12 2.38968 12.079 2.53033 12.2197C2.67098 12.3603 2.75 12.5511 2.75 12.75V13.5M19.25 13.5V12.75C19.25 12.5511 19.329 12.3603 19.4697 12.2197C19.6103 12.079 19.8011 12 20 12H20.75M19.25 13.5H2.75M14 7.5C14 8.29565 13.6839 9.05871 13.1213 9.62132C12.5587 10.1839 11.7956 10.5 11 10.5C10.2044 10.5 9.44129 10.1839 8.87868 9.62132C8.31607 9.05871 8 8.29565 8 7.5C8 6.70435 8.31607 5.94129 8.87868 5.37868C9.44129 4.81607 10.2044 4.5 11 4.5C11.7956 4.5 12.5587 4.81607 13.1213 5.37868C13.6839 5.94129 14 6.70435 14 7.5ZM17 7.5H17.008V7.508H17V7.5ZM5 7.5H5.008V7.508H5V7.5Z"
+                                            stroke="#949494" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                    Pay cash online</span></label>
+                            <input type="radio" name="payment" id="cashOnline" value="online">
                         </div>
+                    </div>
+                    <div class="bank-grid" style="margin-top: 30px; display: none;" id="bank-cards">
+                        <div class="bank-card">
+                            <img src="assets/bircard.png" alt="Birbank" style="width: 45px;">
+                            <span class="bank-name">Birbank</span>
+                        </div>
+                        <div class="bank-card">
+                            <img src="assets/pashabank.png" alt="Pasha Bank" style="width: 83px;">
+                            <span class="bank-name">Pasha Bank</span>
+                        </div>
+                        <div class="bank-card">
+                            <img src="assets/emanat.png" alt="eManat Bank" style="width: 74px;">
+                            <span class="bank-name">eManat Bank</span>
+                        </div>
+                        <div class="bank-card">
+                            <img src="assets/merkazi.jpg" alt="Merkazi Bank" style="width: 73px;">
+                            <span class="bank-name">Merkazi Bank</span>
+                        </div>
+                    </div>
+
+                    <div class="conditional-section" id="installment" style="display: none;">
+                        <p style="color: #949494;font-size: 12px;font-weight: 400;">How many months do you want to
+                            divide the amount into?</p>
+                        <select class="installment-select" style="width: 100%;margin-top: 10px;">
+                            <option disabled selected>Select the number of installments</option>
+                            <option value="3">3 months</option>
+                            <option value="6">6 months</option>
+                            <option value="9">9 months</option>
+                            <option value="12">12 months</option>
+                        </select>
                     </div>
 
                     <div style="margin-top: 24px;">
-                        <label style="display: flex; align-items: center; gap: 10px;">
+                        <label
+                            style="display: flex; align-items: center; gap: 10px;text-transform: capitalize !important;">
                             <input type="checkbox" />
-                            With conditions I <strong>agree</strong>.
+                            With conditions<strong style="text-transform: lowercase;margin-left: 0;">I agree</strong>.
                         </label>
-                        <p style="font-size: 12px; margin-top: 10px; color: #666;">
+                        <p style="font-size: 8px; margin-top: 10px; color: #949494;font-weight: 400;line-height: 16px;">
                             Checking this box confirms that you agree that your email address and other provided
-                            information will be collected and used by Blue Nile...
-                            <a href="#" style="color: #1f57f3;">Privacy Policy</a>
+                            information will be collected and used by Blue Nile for the purposes of sending product
+                            updates, promotions, and other marketing communications via email. Checking this box also
+                            confirms you have read our Privacy Policy and agree to sign up for this optional feature.
+                            You can unsubscribe from marketing email at any time by using the link at the bottom of our
+                            emails or by contacting Blue Nile at
                         </p>
                     </div>
 
@@ -122,7 +207,7 @@
                     </div>
                 </div>
             </div>
-            <div class="product-preview-wrapper">
+            <div class="product-preview-wrapper" style="height: fit-content;">
                 <div class="product-preview">
                     <div class="image-wrapper">
                         <span class="badge">New</span>
