@@ -47,3 +47,25 @@ document.querySelectorAll('.option').forEach(option => {
     bankCardsSection.style.display = isInstallment ? "grid" : "none";
   });
 });
+
+
+const chatIcon = document.getElementById('chat-icon');
+const chatBox = document.getElementById('chats');
+const chatClose = document.getElementById('chat-close');
+
+// Initially show the chat box
+chatBox.style.display = 'block';
+
+// Toggle chat box on chat icon click
+chatIcon.addEventListener('click', () => {
+  if (chatBox.style.display === 'none') {
+    chatBox.style.display = 'block';
+  } else {
+    chatBox.style.display = 'none';
+  }
+});
+
+// Close chat box on close icon click
+chatClose.addEventListener('click', () => {
+  chatBox.style.display = 'none';
+});
