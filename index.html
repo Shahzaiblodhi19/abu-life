@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm Order</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="banner">
+        <div class="container">
+            <h1 style="font-size: 36px;font-weight: 400;color: #fff;margin-top: 0; margin-bottom: 0px;">For more than
+                <span style="font-weight: 500;"> 25
+                    years now, </span>
+            </h1>
+            <p style="color: #fff;font-size: 14px;width: 632px;font-weight: 400;line-height: 24px;">Operating in
+                Azerbaijan, Irshad sells various brands of mobile phones, home appliances, and electronics
+                at wholesale, corporate, and retail levels.
+            </p>
+            <button
+                style="width: 140px;height: 40px;border-radius: 50px;border: 0;color: #0A9749;font-size: 12px;font-weight: 500;margin-top: 20px;">FAQ</button>
+        </div>
+    </div>
+    <div class="container">
+        <h2 style="color: #002D69;font-weight: 700;font-size: 18px;margin-bottom: 0;margin-top: 0;">CONFIRM
+            ORDER
+        </h2>
+        <hr style="height: 1px; border: none; background-color: #0000001A;width: 100%;margin: 20px 0;">
+        <div class="main-row">
+            <div>
+                <form>
+                    <input type="email" placeholder="Email Address" required>
+                    <div class="form-row">
+                        <input type="text" placeholder="First Name" required>
+                        <input type="text" placeholder="Last Name" required>
+                    </div>
+                    <input type="text" placeholder="Company Name">
+                    <select required>
+                        <option value="">Select a Country / Region</option>
+                        <option>United States</option>
+                        <option>Canada</option>
+                        <option>United Kingdom</option>
+                    </select>
+                    <div class="form-row">
+                        <input type="text" placeholder="Street Address" required>
+                        <input type="text" placeholder="Apartment, Suite, Unit, etc (Optional)">
+                    </div>
+                    <input type="text" placeholder="Postcode / ZIP" required>
+                    <input type="text" placeholder="Town / City" required>
+                    <input type="tel" placeholder="Phone Number" required>
+                    <label for="different address"><input id="different address" type="checkbox"> Ship to a different
+                        address?</label>
+                    <textarea rows="9" placeholder="Notes About Your Order, E.g. Special Notes For Delivery"></textarea>
+                </form>
+                <div class="section" style="margin-top: 30px;">
+                    <h3 style="color: #949494;font-size: 14px;font-weight: 500;margin-bottom: 30px;">CHOOSE A METHOD OF OBTAINING THE PRODUCT</h3>
+                    <div class="option-group" id="delivery-options">
+                        <div class="option" onclick="selectOption('pickup')">
+                            <label><span>🛍️ I will pick it up from the store.</span></label>
+                            <input type="radio" name="delivery" id="pickupRadio">
+                        </div>
+                        <div class="option" onclick="selectOption('deliver')">
+                            <label><span>📦 Deliver to address</span></label>
+                            <input type="radio" name="delivery" id="deliverRadio">
+                        </div>
+                    </div>
+
+                    <div class="conditional-section" id="pickupSelect" style="display: none;">
+                        <select style="width: 100%;">
+                            <option>Select a store location</option>
+                            <option>Baku Central Store</option>
+                            <option>Ganja Retail Center</option>
+                            <option>Sumqayit Pickup Point</option>
+                        </select>
+                    </div>
+
+                    <div class="conditional-section" id="deliverAddress" style="display: none;">
+                        <input type="text" placeholder="Street Address">
+                        <input type="text" placeholder="City">
+                        <input type="text" placeholder="Postal Code">
+                    </div>
+
+                    <h3 style="color: #949494;font-size: 14px;font-weight: 500;margin-bottom: 30px;">SELECT PAYMENT METHOD</h3>
+                    <div class="option-group">
+                        <div class="option">
+                            <label><span>💳 Buy in installments</span></label>
+                            <input type="radio" name="payment">
+                        </div>
+                        <div class="option">
+                            <label><span>💳 Buy in installments</span></label>
+                            <input type="radio" name="payment">
+                        </div>
+                        <div class="option">
+                            <label><span>💵 Pay cash on delivery</span></label>
+                            <input type="radio" name="payment">
+                        </div>
+                        <div class="option">
+                            <label><span>💰 Pay cash online</span></label>
+                            <input type="radio" name="payment">
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 24px;">
+                        <label style="display: flex; align-items: center; gap: 10px;">
+                            <input type="checkbox" />
+                            With conditions I <strong>agree</strong>.
+                        </label>
+                        <p style="font-size: 12px; margin-top: 10px; color: #666;">
+                            Checking this box confirms that you agree that your email address and other provided
+                            information will be collected and used by Blue Nile...
+                            <a href="#" style="color: #1f57f3;">Privacy Policy</a>
+                        </p>
+                    </div>
+
+                    <div class="footer-buttons">
+                        <button class="cancel">CANCEL</button>
+                        <button class="continue">CONTINUE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-preview-wrapper">
+                <div class="product-preview">
+                    <div class="image-wrapper">
+                        <span class="badge">New</span>
+                        <div class="right-elements">
+                            <div class="circle">
+                                <svg width="20" height="22" viewBox="0 0 20 22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M13.4739 9.5V5C13.4739 4.00544 13.0788 3.05161 12.3755 2.34835C11.6723 1.64509 10.7184 1.25 9.72386 1.25C8.7293 1.25 7.77547 1.64509 7.07221 2.34835C6.36895 3.05161 5.97386 4.00544 5.97386 5V9.5M17.3299 7.507L18.5929 19.507C18.6629 20.172 18.1429 20.75 17.4739 20.75H1.97386C1.81607 20.7502 1.66001 20.7171 1.51581 20.6531C1.37161 20.589 1.24251 20.4953 1.13689 20.3781C1.03126 20.2608 0.951476 20.1227 0.902716 19.9726C0.853956 19.8226 0.837311 19.6639 0.853862 19.507L2.11786 7.507C2.14702 7.23056 2.27749 6.9747 2.48411 6.78876C2.69074 6.60281 2.95889 6.49995 3.23686 6.5H16.2109C16.7869 6.5 17.2699 6.935 17.3299 7.507ZM6.34886 9.5C6.34886 9.59946 6.30935 9.69484 6.23903 9.76517C6.1687 9.83549 6.07332 9.875 5.97386 9.875C5.87441 9.875 5.77902 9.83549 5.7087 9.76517C5.63837 9.69484 5.59886 9.59946 5.59886 9.5C5.59886 9.40054 5.63837 9.30516 5.7087 9.23483C5.77902 9.16451 5.87441 9.125 5.97386 9.125C6.07332 9.125 6.1687 9.16451 6.23903 9.23483C6.30935 9.30516 6.34886 9.40054 6.34886 9.5ZM13.8489 9.5C13.8489 9.59946 13.8094 9.69484 13.739 9.76517C13.6687 9.83549 13.5733 9.875 13.4739 9.875C13.3744 9.875 13.279 9.83549 13.2087 9.76517C13.1384 9.69484 13.0989 9.59946 13.0989 9.5C13.0989 9.40054 13.1384 9.30516 13.2087 9.23483C13.279 9.16451 13.3744 9.125 13.4739 9.125C13.5733 9.125 13.6687 9.16451 13.739 9.23483C13.8094 9.30516 13.8489 9.40054 13.8489 9.5Z"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+
+                            </div>
+                            <div class="circle">
+                                <svg width="21" height="18" viewBox="0 0 21 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M19.7227 5.25C19.7227 2.765 17.6237 0.75 15.0347 0.75C13.0997 0.75 11.4377 1.876 10.7227 3.483C10.0077 1.876 8.34566 0.75 6.40966 0.75C3.82266 0.75 1.72266 2.765 1.72266 5.25C1.72266 12.47 10.7227 17.25 10.7227 17.25C10.7227 17.25 19.7227 12.47 19.7227 5.25Z"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+
+                            </div>
+                            <div class="circle">
+                                <svg width="23" height="20" viewBox="0 0 23 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M3.70225 6.223C2.76671 7.32718 2.07007 8.6132 1.65625 10C2.94825 14.338 6.96625 17.5 11.7222 17.5C12.7152 17.5 13.6752 17.362 14.5852 17.105M5.95025 4.228C7.6629 3.09786 9.67033 2.49688 11.7222 2.5C16.4783 2.5 20.4953 5.662 21.7873 9.998C21.0792 12.3673 19.5593 14.4116 17.4942 15.772M5.95025 4.228L2.72225 1M5.95025 4.228L9.60025 7.878M17.4942 15.772L20.7222 19M17.4942 15.772L13.8442 12.122C14.1228 11.8434 14.3438 11.5127 14.4946 11.1486C14.6454 10.7846 14.723 10.3945 14.723 10.0005C14.723 9.6065 14.6454 9.21636 14.4946 8.85235C14.3438 8.48834 14.1228 8.1576 13.8442 7.879C13.5657 7.6004 13.2349 7.3794 12.8709 7.22863C12.5069 7.07785 12.1167 7.00025 11.7227 7.00025C11.3288 7.00025 10.9386 7.07785 10.5746 7.22863C10.2106 7.3794 9.87985 7.6004 9.60125 7.879M13.8433 12.121L9.60225 7.88"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+
+                            </div>
+                            <div class="circle">
+                                <svg width="21" height="22" viewBox="0 0 21 22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.93934 9.90704C5.69721 9.47135 5.31725 9.1284 4.85911 8.93202C4.40098 8.73564 3.8906 8.69695 3.4081 8.82202C2.92559 8.94709 2.49827 9.22884 2.19322 9.62304C1.88817 10.0172 1.72266 10.5016 1.72266 11C1.72266 11.4985 1.88817 11.9828 2.19322 12.377C2.49827 12.7712 2.92559 13.053 3.4081 13.1781C3.8906 13.3031 4.40098 13.2644 4.85911 13.0681C5.31725 12.8717 5.69721 12.5287 5.93934 12.093M5.93934 9.90704C6.11934 10.231 6.22234 10.603 6.22234 11C6.22234 11.397 6.11934 11.77 5.93934 12.093M5.93934 9.90704L15.5053 4.59304M5.93934 12.093L15.5053 17.407M15.5053 4.59304C15.6456 4.85718 15.8371 5.0907 16.0687 5.27997C16.3002 5.46923 16.5672 5.61043 16.854 5.69532C17.1407 5.7802 17.4415 5.80706 17.7388 5.77433C18.0361 5.7416 18.3238 5.64994 18.5853 5.5047C18.8467 5.35946 19.0765 5.16356 19.2614 4.92845C19.4462 4.69334 19.5823 4.42375 19.6618 4.13542C19.7412 3.8471 19.7623 3.54583 19.724 3.24923C19.6856 2.95264 19.5885 2.66667 19.4383 2.40804C19.1424 1.89838 18.6583 1.52518 18.0901 1.36865C17.522 1.21213 16.9151 1.28478 16.3999 1.57099C15.8847 1.8572 15.5024 2.33412 15.3351 2.89923C15.1678 3.46434 15.229 4.07252 15.5053 4.59304ZM15.5053 17.407C15.3618 17.6654 15.2706 17.9495 15.2368 18.2432C15.2031 18.5368 15.2275 18.8342 15.3087 19.1184C15.3899 19.4026 15.5263 19.668 15.7101 19.8995C15.8939 20.131 16.1215 20.324 16.3798 20.4675C16.6382 20.6111 16.9223 20.7023 17.216 20.736C17.5096 20.7698 17.807 20.7453 18.0912 20.6641C18.3754 20.5829 18.6408 20.4465 18.8723 20.2628C19.1038 20.079 19.2968 19.8514 19.4403 19.593C19.7302 19.0712 19.8009 18.4556 19.6369 17.8817C19.4729 17.3077 19.0877 16.8224 18.5658 16.5325C18.044 16.2427 17.4284 16.1719 16.8545 16.3359C16.2805 16.4999 15.7952 16.8852 15.5053 17.407Z"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                        <img src="assets/iphone 13.png" alt="Product Image">
+                    </div>
+                    <div class="rating">★★★★★</div>
+                    <h3 style="font-size: 20px;font-weight: 700;color: #151542;">Classic Simple Solitaire Engagement
+                        Ring In
+                        14k White Gold</h3>
+                    <span
+                        style="width: 20px;height: 20px;background-color: #CCCCFF;border-radius: 50px;border: 1px solid #E9E9E9;margin-bottom: 20px;"></span>
+                    <div class="price">
+                        <del>$1356</del>
+                        <span style="color: #151542;font-size: 24px;font-weight: 600;">$1356</span>
+                        <span class="discount">-30%</span>
+                    </div>
+                    <div class="tags">
+                        <button>iPhone</button>
+                        <button>Silicone</button>
+                    </div>
+                </div>
+                <div class="cart-card" style="margin-top: 35px;">
+                    <div class="cart-title">CART TOTALS</div>
+                    <hr class="cart-divider" />
+
+                    <div class="cart-row" style="font-weight: 600; color: #002D69;font-size: 14px;">
+                        <div>PRODUCT</div>
+                        <div>SUBTOTAL</div>
+                    </div>
+
+                    <hr class="cart-divider" />
+
+                    <div class="cart-row">
+                        <div class="product-name">Classic Simple Solitaire Engagement Ring in 14k White Gold</div>
+                    </div>
+
+                    <div class="cart-row" style="margin-top: 20px;">
+                        <div class="label">PRODUCT PRICE</div>
+                        <div class="value">3799.99 AZN</div>
+                    </div>
+
+                    <div class="cart-row" style="margin-top: 28px;">
+                        <div class="label">DISCOUNT</div>
+                        <div class="value">-1000 AZN</div>
+                    </div>
+
+                    <div class="cart-row" style="margin-top: 28px;">
+                        <div class="label">DELIVERY</div>
+                        <div class="value">0 AZN</div>
+                    </div>
+
+                    <hr class="cart-divider" />
+
+                    <div class="cart-row total-row">
+                        <div class="cart-total-label">TOTAL PRICE</div>
+                        <div style="font-size: 18px;">2799.99 AZN</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
